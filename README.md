@@ -1,6 +1,7 @@
 # Atividade-academica-mobile-react-native
 Atividade academica de mobile utilizando a tecnologia react native
-primeira atividade
+
+atividade 1
 
 ![image](https://user-images.githubusercontent.com/114779612/225074685-5231f0af-e65c-4791-804a-26f180d91c36.png) 
 
