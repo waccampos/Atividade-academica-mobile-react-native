@@ -1,0 +1,85 @@
+import { StatusBar } from 'expo-status-bar';
+import { StyleSheet, Text, View, Image } from 'react-native';
+ 
+export default function App() {
+  return (
+    <View style={styles.container}>
+      <View style={styles.viewbox}>
+      <Text style={styles.titulo}>titulo principals</Text>
+      <Text style={styles.texto}>um texto corrdo,um texto corrdo,um texto corrdo,um texto corrdo,um texto corrdo,um texto corrdo,um texto corrdo,um texto corrdo,um texto corrdo,um texto corrdo,um texto corrdo,um texto corrdo,um texto corrdo,um texto corrdo</Text>
+      </View>
+      
+
+      <View style={styles.viewbox2}>
+      <Text style={styles.titulo2}>Open up App.js to start working </Text>
+      <Text style={styles.texto2}>um texto corrdo,um texto corrdo,um texto corrdo</Text>
+      </View>
+      <View style={styles.viewbox2}>
+      <Text style={styles.titulo2}>Open up App.js to start working</Text>
+      <Text style={styles.texto2}>um texto corrdo,um texto corrdo,um texto corrdo</Text>
+      </View>
+      <View style={styles.viewbox2}>
+      <Text style={styles.titulo2}>Open up App.js to start working</Text>
+      <Text style={styles.texto2}>um texto corrdo,um texto corrdo,um texto corrdo</Text>
+      </View>
+      <View style={styles.viewbox3}>
+      <Image 
+      source={require('./assets/flamengo.png')}
+      style={styles.imagem}
+      /> 
+      </View>
+      <StatusBar style="auto" />
+    </View>
+  );
+}
+
+const styles = StyleSheet.create({
+  container: {
+    flex: 1,
+    backgroundColor: '#fff',
+    padding: 4,
+  },
+  viewbox: {
+    backgroundColor: '#fff',
+    alignItems:'center',
+  },
+
+  titulo: {
+    flexDirection: 'row',
+    marginTop: 30,
+    backgroundColor: '#fff',
+    fontWeight: 'bold',
+    fontSize: 30,
+  },
+  texto: {
+    marginTop: 20,
+    backgroundColor: '#fff',
+    textAlign: 'justify',
+  },
+  viewbox2: {
+    backgroundColor: '#fff',
+    alignContent: 'flex-start',
+    
+  },
+  titulo2: {
+    marginTop: 30,
+    backgroundColor: '#fff',
+    fontWeight: 'bold',
+    fontSize: 20,
+        
+  },
+  texto2: {
+    marginTop: 30,
+    backgroundColor: '#fff',
+    alignContent: 'center',
+  },
+  viewbox3: {
+    marginTop: 10,
+    backgroundColor: '#fff',
+    alignItems:'center',
+  },
+  imagem: {
+    resizeMode: 'cover',
+  }
+
+});

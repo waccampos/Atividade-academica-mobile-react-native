@@ -1,0 +1,43 @@
+import { StatusBar } from 'expo-status-bar';
+import { StyleSheet, Text, View, Image } from 'react-native';
+
+export default function App() {
+  return (
+    <View style={styles.container}>
+      <View style={styles.viewbox}>
+      <Text style={styles.titulo}>titulo principals</Text>
+      <Text style={styles.texto}>um texto corrdo,um texto corrdo,um texto corrdo,um texto corrdo,um texto corrdo,um texto corrdo,um texto corrdo,um texto corrdo,um texto corrdo,um texto corrdo,um texto corrdo,um texto corrdo,um texto corrdo,um texto corrdo</Text>
+      </View>
+      
+      <StatusBar style="auto" />
+    </View>
+  );
+}
+
+const styles = StyleSheet.create({
+  container: {
+    flex: 1,
+    backgroundColor: '#fff',
+    padding: 4,
+  },
+  viewbox: {
+    backgroundColor: '#fff',
+    alignItems:'center',
+  },
+
+  titulo: {
+    flexDirection: 'row',
+    marginTop: 30,
+    backgroundColor: '#fff',
+    fontWeight: 'bold',
+    fontSize: 30,
+  },
+  texto: {
+    marginTop: 20,
+    backgroundColor: '#fff',
+    textAlign: 'justify',
+  },
+  
+ 
+
+});
